@@ -1,0 +1,104 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 123163638005,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "goto wizz air home page",
+            "match": {
+              "location": "Wizzaironeway.goto_wizz_air_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "One way search",
+        "description": "",
+        "id": "wizz-air-oneway-trip-search;one-way-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10007112698,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Select the source and destnation",
+            "match": {
+              "location": "Wizzaironeway.select_the_source_and_destnation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2618680372,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "select the date",
+            "match": {
+              "location": "Wizzaironeway.select_the_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18517336533,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "select the no of passenger",
+            "match": {
+              "location": "Wizzaironeway.select_the_no_of_passenger()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4144802118,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click the search",
+            "match": {
+              "location": "Wizzaironeway.click_the_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57857,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify the list of plane details",
+            "match": {
+              "location": "Wizzaironeway.verify_the_list_of_plane_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Wizz air oneway trip search",
+    "description": "",
+    "id": "wizz-air-oneway-trip-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/WizzAironeway.feature",
+    "tags": []
+  }
+]

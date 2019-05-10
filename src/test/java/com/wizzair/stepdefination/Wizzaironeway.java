@@ -41,7 +41,7 @@ public void select_the_no_of_passenger() {
 	p= new Pom();
 	click(p.getPassenger());
 	click(p.getAdult());
-	//click(p.getChild());
+	click(p.getChild());
 	click(p.getInfant());
 }
 
