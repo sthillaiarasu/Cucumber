@@ -6,17 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
-	  protected static WebDriver driver;
+	  
+	 public static WebDriver driver;
 	
 	public static WebDriver browserlaunnch() {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\M\\eclipse-1\\Cucumberfirst\\driver\\chromedriver.exe");
-		setDriver(new ChromeDriver());
-		return getDriver();
+		driver=new ChromeDriver();
+		return driver;
 	}
 	
 	public void loadurl(String url) {
-		getDriver().get(url);
+		driver.get(url);
 	}
 	
 	public void send(WebElement element, String send) {
@@ -31,21 +32,15 @@ public class Base {
 	
 	public void maximize() {
 		
-		getDriver().manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 	
 	public void wait1() {
 
-		getDriver().manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 	}
 
-	public static WebDriver getDriver() {
-		return driver;
-	}
-
-	public static void setDriver(WebDriver driver) {
-		Base.driver = driver;
-	}
+	
 	
 
 }
